@@ -1,11 +1,20 @@
 import React from 'react';
-import MainContainer from './components/Layout'
+import Input from './components/Input'
+import AddButton from './components/AddButton'
+import Grid from '@material-ui/core/Grid'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <MainContainer />
+      <Grid container justify="center" alignItems="center">
+        <Grid item>
+          <Input />
+        </Grid>
+        <Grid item>
+          <AddButton />
+        </Grid>
+        </Grid>
     </div>
   );
 }
